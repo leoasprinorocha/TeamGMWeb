@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+
+
+
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-transparent border-bottom box-shadow mb-3">
             <div class="container">
-                
+
                 <a class="navbar-brand text-danger font-weight-bolder" asp-area="" asp-controller="Home" asp-action="Index">TeamGMWeb</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -22,18 +26,36 @@
                         <li class="nav-item">
                             <a class="nav-link text-danger font-weight-bolder" asp-area="" asp-controller="Home" asp-action="Index">Logout</a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    @*Box de mensagens*@
+    <div id="dbox" class="float-sm-left">
+        <div id="dboxm">Test</div>
+        <input type="button" value="OK" onclick="dbox()" />
+    </div>
+
     <div class="container">
         <main role="main" class="pb-3">
-            
+
             @RenderBody()
+
         </main>
+
+
     </div>
+
+
+
+    <input type="button" value="Dialog Box" onclick="dbox('Message')" />
+
+
+
+
 
     <footer class="border-top footer text-muted">
         <div class="container">
@@ -41,6 +63,7 @@
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/Custom/Custom.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

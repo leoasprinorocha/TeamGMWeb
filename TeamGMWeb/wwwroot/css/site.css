@@ -12,6 +12,23 @@ a {
   color: #0366d6;
 }
 
+#dbox {
+    /* (A1) CENTER ON PAGE */
+    position: fixed;
+    top: 10%;
+    left: 85%;
+    transform: translate(-50%);
+    /* (A2) DIMENSIONS */
+    width: 300px;
+    padding: 10px;
+    /* (A3) COLORS */
+    color: #333;
+    border: 1px solid #c52828;
+    background: #ffebe1;
+    /* (A4) HIDE */
+    display: none;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
