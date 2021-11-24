@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31727.386
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamGMWeb", "TeamGMWeb\TeamGMWeb.csproj", "{75D99440-1798-46E9-BA1A-EA0BE472D6DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamGMWeb", "TeamGMWeb\TeamGMWeb.csproj", "{75D99440-1798-46E9-BA1A-EA0BE472D6DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{EB3F55C7-EAE0-40BA-8F09-6F1110EFD34B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Business", "1 - Business", "{54E1D302-DEAB-47CF-9DC6-285AE3554A1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{DF970EF9-7AE5-4B92-BDD3-A41B77B13D6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Data", "3 - Data", "{BF0539A2-8D85-4590-8E1B-3241EC3C15C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{B49D2C67-95DB-42A6-901E-0338909FE451}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +28,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75D99440-1798-46E9-BA1A-EA0BE472D6DA} = {EB3F55C7-EAE0-40BA-8F09-6F1110EFD34B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81252698-B880-45D1-85D2-2A3AA38AABC7}
